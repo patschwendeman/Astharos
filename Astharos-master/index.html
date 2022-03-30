@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Astharos</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/Logo.svg">
+		<link rel="stylesheet" href="css/preloader.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/start.css">
+		<link rel="stylesheet" href="css/ttrpg.css">
+		<link rel="stylesheet" href="css/welt.css">
+		<link rel="stylesheet" href="css/karte.css">
+		<link rel="stylesheet" href="css/tools.css">
+		<link rel="stylesheet" href="css/downloads.css">
+		<link rel="stylesheet" href="css/columns.css">
+		<link rel="stylesheet" href="css/mobile.css">
+	</head>
+	<body>
+		<div id="preloader">
+			<img id="preloaderLogo" src="assets/Logo.svg" alt="Astahros Logo">
+			<img id="preloaderGif" src="assets/Preloader/preloader3.gif" alt="Preloader konnte nicht geladen werden">
+			<button id="preloaderButton">Start</button>
+		</div>
+		<div class="hero"></div>
+		<div id="notPreloader">
+			<nav id="desktopNav">
+				<ul id="navbar">
+					<li><a id="navHome" href="#startFrameHrefAnchor">Home</a></li>
+					<li><a id="navTTRPG" href="#ttrpgHrefAnchor">TTRPG</a></li>
+					<li><a id="navWelt" href="#weltHrefAnchor">Welt</a></li>
+					<li><a id="navKarte" href="#karteHrefAnchor">Karte</a></li>
+					<li><a id="navTools" href="#toolsHrefAnchor">Tools</a></li>
+					<li><a id="navDownloads" href="#downloadsHrefAnchor">Downloads</a></li>
+					<li id="sliderContainer">
+						<img id="navVolBtn" class="soundBtn" src="assets/Navbar/volume.png" alt="Volume">
+						<img id="navMuteBtn" class="soundBtn" src="assets/Navbar/mute.png" alt="Mute">
+						<input id="volumeSlider" type="range" min="0" max="100" value="25">
+					</li>
+				</ul>
+			</nav>
+			<nav id="mobileNav">
+				<div id="menuToggle">
+					<input id="menuToggleCheckbox" type="checkbox" />
+					<span id="span1"></span>
+					<span id="span2"></span>
+					<span id="span3"></span>
+					<ul id="menu">
+						<li><a class="mobileLink" href="#startframe">Home</a></li>
+						<li><a class="mobileLink" href="#ttrpgHrefAnchor">TTRPG</a></li>
+						<li><a class="mobileLink" href="#weltHrefAnchor">Welt</a></li>
+						<li><a class="mobileLink" href="#diceRollerHrefAnchor">Tools</a></li>
+						<li><a class="mobileLink" href="#atmosHrefAnchor">Atmos</a></li>
+						<li><a class="mobileLink" href="#downloadsHrefAnchor">Downloads</a></li>
+					</ul>
+					<div id="mobileVolumeDiv">
+						<img id="mobilenavVolBtn" src="assets/Navbar/volume.png" alt="Volume">
+						<img id="mobilenavMuteBtn" src="assets/Navbar/mute.png" alt="Mute">
+					</div>
+				</div>
+			</nav>
+			<main>
+				<!-- Bereich: Startframe -->
+				<section id="startframe" class="posRelative">
+					<div id="startFrameHrefAnchor"></div>
+					<div id="startframeDecoLeft">
+						<img class="startframeRahmen" src="assets/start/Mauerwerk_links.svg" alt="Mauerwerk konnte nicht geladen werden">
+					</div>
+					<div id="middleSection">
+						<div id="startframeLogo">
+							<img id="startLogo" src="assets/Logo.svg" alt="Astharos Logo">
+						</div>
+					</div>
+					<div id="startframeDecoRight">
+						<img class="startframeRahmen" src="assets/start/Mauerwerk_rechts.svg" alt="Mauerwerk konnte nicht geladen werden">
+					</div>
+				</section>
+				<div class="rahmenUebergang">
+					<img src="assets/rahmenUebergang.svg" alt="Rahmen konnte nicht angezeigt werden">
+				</div>
+				<!-- Bereich: TTRRPG -->
+				<section id="ttrpg" class="posRelative">
+					<div id="ttrpgHrefAnchor"></div>
+					<div id="ttrpgNav">
+						<h1 id="h1TTRPG">TTRPG</h1>
+						<div id="ttrpgCrowandSpeech">
+							<div id="sprechblase">
+								<p id="sprechblaseText">Frag mich einfach wenn du Hilfe brauchst, Kräh!</p>
+							</div>
+							<img id="crowTTRPG" class="ravenHover" src="assets/Copy_of_crow-v2_sit.png" alt="Bild konnte nicht geladen werden">
+						</div>
+						<div id="ttrpgNavbar">
+							<div class="questionBox fontHover">
+								<object class="navbarQuestionsImg" data="assets/ttrpg/Intro_TTRPG_Textbox_2.svg" type="image/svg+xml"></object>
+								<p>Was ist ein TTRPG&#x202f;?</p>
+							</div>
+							<div class="questionBox fontHover">
+								<object class="navbarQuestionsImg" data="assets/ttrpg/Intro_TTRPG_Textbox_2.svg" type="image/svg+xml"></object>
+								<p>Wie funktioniert ein TTRPG&#x202f;?</p>
+							</div>
+							<div class="questionBox fontHover">
+								<object class="navbarQuestionsImg" data="assets/ttrpg/Intro_TTRPG_Textbox_2.svg" type="image/svg+xml"></object>
+								<p>Was brauche ich für ein TTRPG&#x202f;?</p>
+							</div>
+							<div class="questionBox fontHover">
+								<object class="navbarQuestionsImg" data="assets/ttrpg/Intro_TTRPG_Textbox_2.svg" type="image/svg+xml"></object>
+								<p id="ttrpgQ4">Welche Aufgaben hat der Spielmeister&#x202f;?</p>
+							</div>
+						</div>
+					</div>
+					<div id="contentDesktopTTRPG" class="backgroundWood">
+						<div id="wasIst" class="ttrpgUnterseite yellowFrame">
+							<div class="anchor"></div>
+							<h2>Was ist ein TTRPG&#x202f;?</h2>
+							<p class="erklaertext">
+								Ein TTRPG ist ein fiktionales Rollenspiel, welches 
+								mit Papier, Stiften und Würfeln gespielt wird. In 
+								einem TTRPG ist einem Videospiel recht änhlich. 
+								Wenn man in einem Videospiel eine Taste, ein 
+								Knopf oder ähnliches drückt, entscheidet der 
+								Algorithmus im Hintergrund was als nächstes 
+								passiert. Die Spieler aktivieren durch ihre 
+								Entscheidungen damit verschiedene Aktionen. 
+								Die Aktion wird in den meisten Fällen durch 
+								Sätze wie „Ich schlage zu…“ oder „Ich mache 
+								ein Feuer…“. gestartet. Dadurch aktiviert sich 
+								der Algorithmus, welcher im TTRPG Universum 
+								durch den Spielleiter verkörpert wird. Alles was im 
+								Hintergrund passiert, läuft über den Spielleiter. 
+								Die Geschichte, Proben und Aktionen oder NPCs. 
+								Ob eine Aktion bzw. Probe eines Spielers erfolgt 
+								oder scheitert, entscheidet sich durch deren 
+								Talente und das geworfene Würfelergebnis.
+							</p>
+							<!--<object id="videoFrame" data="assets/ttrpg/Intro_TTRPG_3.svg" type="image/svg+xml"></object>-->
+							<div id="ytVideoFrame">
+								<iframe id="wasIstYtVideo" src="https://www.youtube.com/embed/1VxCl3vacA8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div id="wieFunktioniert" class="ttrpgUnterseite yellowFrame">
+							<div class="anchor"></div>
+							<h2>Wie funktioniert ein TTRPG&#x202f;?</h2>
+							<p class="erklaertext">
+								Du willst wissen wie ein TTRPG funktioniert&#x202f;? 
+								Durch das Zusammenarbeiten zwischen den 
+								Spielern und dem Spielleiter können Aktionen 
+								durchgeführt werden und die Geschichte 
+								vorangebracht werden.
+								Bsp.:
+								„Ihr wandert durch einen verwachsenen Wald, 
+								als ihr dann auf eine offene Lichtung trifft. Auf 
+								der Lichtung stehen Kühe und Schafe und eine 
+								kleinere Hütte. Was tut ihr&#x202f;?“
+								Danach müssen die Spieler reagieren, indem 
+								sie bestimmte Aktionen ihres Charakters 
+								durchführen (Bsp.: zur Hütte laufen, umschauen, 
+								Waffen ziehen oder sich verstecken). 
+								Danach beschreibt der Spielleiter was sich 
+								durch die Aktionen der Spieler verändert. 
+								Dementsprechend gibt es einen ständigen Dialog 
+								zwischen den Spielern und dem Spielleiter.
+							</p>
+							<div class="rolleFunktionContainer">
+								<img class="rolleFunktion" src="assets/karte/background_map.svg" alt="Bild konnte nicht geladen werden">
+								<img class="rolleFunktionPicture" src="assets/ttrpg/buch.jpg" alt="Bild konnte nicht geladen werden">
+							</div>
+						</div>
+						<div id="wasBraucheIch" class="ttrpgUnterseite">
+							<div class="anchor"></div>
+							<h2 id="wasBraucheIchH2" class="yellowFrame">Was brauche ich für ein TTRPG&#x202f;?</h2>
+							<div id="questionsFrame">
+								<div id="questions">
+									<p id="regelwerk" class="fontHover">1. Ein Regelwerk</p>
+									<p id="charakterboegen" class="fontHover">2. Charakterbögen</p>
+									<p id="wuerfel" class="fontHover">3. Verschiedene Würfel</p>
+									<p id="papier" class="fontHover">4. Bleistift & Papier</p>
+									<p id="sichtschutz" class="fontHover">5. Sichtschutz für Spielleiter</p>
+									<p id="geschichte" class="fontHover">6. Eine Geschichte</p>
+									<p id="leiter" class="fontHover">7. Ein Spielleiter</p>
+									<p id="multiplayer" class="fontHover">8. Mindestens 2 Spieler</p>
+								</div>
+							</div>
+							<div id="rolleBraucheContainer">
+								<img id="rolleBrauche" src="assets/karte/background_map.svg" alt="Bild konnte nicht geladen werden">
+								<img id="rolleBrauchePicture" src="assets/ttrpg/buch.jpg" alt="Bild konnte nicht geladen werden">
+							</div>
+						</div>
+						<div id="welcheAufgabe" class="ttrpgUnterseite yellowFrame">
+							<div class="anchor"></div>
+							<h2>Welche Aufgaben hat der Spielmeister&#x202f;?</h2>
+							<p class="erklaertext">
+								Wie ich die Augen und Ohren für euch bin, so ist 
+								der Spielleiter das und alle weiteren Sinne für die 
+								Spieler. Er führt sie nicht nur durch die Geschichte, 
+								sondern sorgt dafür das die gewünschten 
+								Aktionen der Spieler ausgeführt werden. Neben 
+								der Geschichte kennt der Spielleiter auch die 
+								Rahmenhandlung, sowie wichtige Aktionen und 
+								Hintergründe der Spielwelt. 26
+								Da die Spieler immer unterschiedlich 
+								reagieren, sowie auch ab und zu von der 
+								Geschichte abweichen, ist eine gewisse 
+								Improvisationsfähigkeit von Vorteil. Das hilft dem 
+								schnellen Weiterführen der Geschichte und gibt 
+								den Spielern die Möglichkeit sich besser in die 
+								Welt einzufühlen. Klingt kompliziert oder&#x202f;?
+								Der Spielleiter verkörpert alle Charaktere, welche 
+								nicht von Spielern gespielt werden. Er spricht 
+								für sie, kontrolliert sie in einem Kampf und gibt 
+								ihnen das kreative Etwas, um sie von der Masse 
+								abzuheben. Der hat ja ziemlich viel zu tun…
+							</p>
+							<div class="rolleFunktionContainer">
+								<img class="rolleFunktion" src="assets/karte/background_map.svg" alt="Bild konnte nicht geladen werden">
+								<img class="rolleFunktionPicture" src="assets/ttrpg/dungeonmaster.jpg" alt="Bild konnte nicht geladen werden">
+							</div>
+						</div>
+					</div>
+					<div id="mobileTTRPG">
+						<button class="accordion">Was ist ein TTRPG&#x202f;?</button>
+						<div class="accPanel">
+							<h2>Was ist ein TTRPG&#x202f;?</h2>
+							<!--<object data="assets/ttrpg/Intro_TTRPG_3.svg" type="image/svg+xml"></object>-->
+							<iframe id="mobileWasIstVideo" src="https://www.youtube.com/embed/1VxCl3vacA8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<p>
+								Ein TTRPG ist ein fiktionales Rollenspiel, welches 
+								mit Papier, Stiften und Würfeln gespielt wird. In 
+								einem TTRPG ist einem Videospiel recht änhlich. 
+								Wenn man in einem Videospiel eine Taste, ein 
+								Knopf oder ähnliches drückt, entscheidet der 
+								Algorithmus im Hintergrund was als nächstes 
+								passiert. Die Spieler aktivieren durch ihre 
+								Entscheidungen damit verschiedene Aktionen. 
+								Die Aktion wird in den meisten Fällen durch 
+								Sätze wie „Ich schlage zu…“ oder „Ich mache 
+								ein Feuer…“. gestartet. Dadurch aktiviert sich 
+								der Algorithmus, welcher im TTRPG Universum 
+								durch den Spielleiter verkörpert wird. Alles was im 
+								Hintergrund passiert, läuft über den Spielleiter. 
+								Die Geschichte, Proben und Aktionen oder NPCs. 
+								Ob eine Aktion bzw. Probe eines Spielers erfolgt 
+								oder scheitert, entscheidet sich durch deren 
+								Talente und das geworfene Würfelergebnis.
+							</p>
+						</div>
+						<button class="accordion">Wie funktioniert ein TTRPG&#x202f;?</button>
+						<div class="accPanel">
+							<h2>Wie funktioniert ein TTRPG&#x202f;?</h2>
+							<p>
+								Du willst wissen wie ein TTRPG funktioniert&#x202f;? 
+								Durch das Zusammenarbeiten zwischen den 
+								Spielern und dem Spielleiter können Aktionen 
+								durchgeführt werden und die Geschichte 
+								vorangebracht werden.
+								Bsp.:
+								„Ihr wandert durch einen verwachsenen Wald, 
+								als ihr dann auf eine offene Lichtung trifft. Auf 
+								der Lichtung stehen Kühe und Schafe und eine 
+								kleinere Hütte. Was tut ihr&#x202f;?“
+								Danach müssen die Spieler reagieren, indem 
+								sie bestimmte Aktionen ihres Charakters 
+								durchführen (Bsp.: zur Hütte laufen, umschauen, 
+								Waffen ziehen oder sich verstecken). 
+								Danach beschreibt der Spielleiter was sich 
+								durch die Aktionen der Spieler verändert. 
+								Dementsprechend gibt es einen ständigen Dialog 
+								zwischen den Spielern und dem Spielleiter.
+							</p>
+						</div>
+						<button class="accordion">Was brauche ich für ein TTRPG&#x202f;?</button>
+						<div class="accPanel">
+							<h2>Was brauche ich für ein TTRPG&#x202f;?</h2>
+							<div id="mobileWasIstFragen">
+								<p id="mobRegelwerk">1. Ein Regelwerk</p>
+								<p id="mobCharakterbogen">2. Charakterbögen</p>
+								<p id="mobWuerfel">3. Verschiedene Würfel</p>
+								<p id="mobPapier">4. Bleistift & Papier</p>
+								<p id="mobSichtschutz">5. Sichtschutz für Spielleiter</p>
+								<p id="mobGeschichte">6. Eine Geschichte</p>
+								<p id="mobSpielleiter">7. Ein Spielleiter</p>
+								<p id="mobSpieler">8. Mindestens 2 Spieler</p>
+							</div>
+							<div>
+								<img id="mobileWasBraucheBild" src="assets/ttrpg/buch.jpg" alt="Bild konnte nicht geladen werden">
+							</div>
+						</div>
+						<button class="accordion">Welche Aufgaben hat der Spielmeister&#x202f;?</button>
+						<div class="accPanel">
+							<h2>Welche Aufgaben hat der Spielmeister&#x202f;?</h2>
+							<p>
+								Wie ich die Augen und Ohren für euch bin, so ist 
+								der Spielleiter das und alle weiteren Sinne für die 
+								Spieler. Er führt sie nicht nur durch die Geschichte, 
+								sondern sorgt dafür das die gewünschten 
+								Aktionen der Spieler ausgeführt werden. Neben 
+								der Geschichte kennt der Spielleiter auch die 
+								Rahmenhandlung, sowie wichtige Aktionen und 
+								Hintergründe der Spielwelt. 26
+								Da die Spieler immer unterschiedlich 
+								reagieren, sowie auch ab und zu von der 
+								Geschichte abweichen, ist eine gewisse 
+								Improvisationsfähigkeit von Vorteil. Das hilft dem 
+								schnellen Weiterführen der Geschichte und gibt 
+								den Spielern die Möglichkeit sich besser in die 
+								Welt einzufühlen. Klingt kompliziert oder&#x202f;?
+								Der Spielleiter verkörpert alle Charaktere, welche 
+								nicht von Spielern gespielt werden. Er spricht 
+								für sie, kontrolliert sie in einem Kampf und gibt 
+								ihnen das kreative Etwas, um sie von der Masse 
+								abzuheben. Der hat ja ziemlich viel zu tun…
+							</p>
+						</div>
+					</div>
+					<div id="rahmen2" class="rahmenUebergang">
+						<img src="assets/rahmenUebergang.svg" alt="Rahmen konnte nicht angezeigt werden">
+					</div>
+				</section>
+				<!-- Bereich: Welt -->
+				<section id="welt" class="posRelative">
+					<div id="weltHrefAnchor"></div>
+					<div id="weltStart" class="sectionStart">
+						<h1 id="h1Welt">Die Welt von <br> Astharos</h1>
+						<div id="animationsfilmWeltBox">
+							<img id="weltAnimationsfilmTafel" src="assets/introWelt/Intro_Welt_1.svg" alt="Bild konnte nicht geladen werden">
+							<video id="animationsfilmWelt" controls>
+								<source src="assets/Animationsfilm/Animation_15MB.mp4" type="video/mp4" />
+								<source src="assets/Animationsfilm/Animation_35MB..mp4" type="video/mp4" />
+							</video>
+						</div>
+					</div>
+					<div id="weltMain" class="backgroundWood threeHigh">
+						<div id="weltEinstieg">
+							<div id="abenteuerEinstieg" class="yellowFrame">
+								<h2>Dann wollen wir mal in das Abenteuer einsteigen</h2>
+								<div>
+									<div>
+										<p id="weltEinstiegText" class="yellowBoxPara erklaertext">
+											Astharos ist ein Fantasy TTRPG Abenteuer, 
+											welches eigens entwickelt wurde. Dabei wurden 
+											verschiedene Welten und Geschichten als 
+											Inspiration genutzt um eine umfangreiche und 
+											interessante Welt zu erschaffen.<br><br>
+											Der Kontinent Astharos gilt als der reichste 
+											Kontinent der bekannten Welt. Fruchtbares 
+											Land, erzreiche Gebirge und eine Vielzahl an 
+											Lebewesen zieren die Welt von Astharos. Hier 
+											leben viele verschiedene Rassen, darunter 
+											Menschen, Orgrosh, die Orks, Arondal, die Elben, 
+											Helban, die Halblinge, Taragdul, die Zwerge, 
+											Felica, die Katzenmenschen und die Pessmos, 
+											Mischwesen aus Tier und Mensch, sowie anderen 
+											Wesen.
+											Astharos ist aufgeteilt in mehrere Fürstentümer 
+											wie Caelndil, Terrascall, Mithrand, Seedeheim, 
+											Auurus – Erandal, Bühlenbrügge und der Insel 
+											Ihlfheim.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="weltBook">
+							<div id="weltbookFrame">
+								<div id="vl1"></div>
+								<div id="vl2"></div>
+								<svg class="bookPathSvg">
+									<path class="bookPath" d="M 0 0 C 500 -1 500 30 580 0 C 660 30 660 -1 1160 0" />
+								</svg>
+								<div class="leftBookSide">
+									<div id="indexLeft">
+										<h2>Index</h2>
+										<div class="BookPoints">
+											<p id="indexRassen" class="fontHover">1. Rassen</p>
+											<p id="indexReligion" class="fontHover">2. Religion</p>
+											<p id="indexMagie" class="fontHover">3. Elementarmagie</p>
+										</div>
+									</div>
+									<div id="rassenLeft">
+										<h2>Rassen</h2>
+										<div class="BookPoints">
+											<p id="orks" class="fontHover">1. Orgrosh – Orks</p>
+											<p id="elben" class="fontHover">2. Arondal – Elben</p>
+											<p id="halbElben" class="fontHover">3. Halb-Elben</p>
+											<p id="halbling" class="fontHover">4. Helban – Halbling</p>
+											<p id="zwerge" class="fontHover">5. Taragdul – Zwerge</p>
+											<p id="katzenmenschen" class="fontHover">6. Felica – Katzenmenschen</p>
+											<p id="mischwesen" class="fontHover">7. Pessmos – Mischwesen</p>
+										</div>
+									</div>
+									<div id="religionLeft">
+										<h2>Religion</h2>
+										<div class="BookPoints">
+											<p id="thyros" class="fontHover">1. Thyros - Gott des Himmels</p>
+											<p id="aris" class="fontHover">2. Aris – Göttin der Jagd</p>
+											<p id="begrend" class="fontHover">3. Begrend – Gott des Weines und der Völlerei</p>
+											<p id="trendir" class="fontHover">4. Trendir – Gott des Handwerks</p>
+											<p id="gilith" class="fontHover">5. Gilith – Göttin der Musik und Kunst</p>
+											<p id="koshka" class="fontHover">6. Koshka – Gott der Magie und des Wissens</p>
+											<p id="seonora" class="fontHover">7. Seonora – Göttin der Liebe und Zuneigung</p>
+											<p id="fanuin" class="fontHover">8. Fanuin – Gott des Lichts</p>
+											<p id="varrakis" class="fontHover">9. Varrakis – Gott des Kampfes und Krieges</p>
+										</div>
+									</div>
+									<div id="elementarmagieLeft">
+										<h2>Magie</h2>
+										<div class="BookPoints">
+											<p id="element" class="fontHover">1. Elementarmagie</p>
+											<p id="natur" class="fontHover">2. Naturmagie</p>
+											<p id="schutz" class="fontHover">3. Schutz & Verstärkungsmagie</p>
+											<p id="beschwoer" class="fontHover">4. Beschwörungsmagie</p>
+											<p id="illusion" class="fontHover">5. Illusionsmagie</p>
+											<p id="wiederher" class="fontHover">6. Wiederherstellungsmagie</p>
+											<p id="bannmagie" class="fontHover">7. Bannmagie & Flüche</p>
+											<p id="fortbewegung" class="fontHover">8. Fortbewegungsmagie</p>
+											<p id="wissens" class="fontHover">9. Erkenntnismagie</p>
+											<p id="dunkle" class="fontHover">10. Dunkle Magie</p>
+										</div>
+									</div>
+								</div>
+								<div class="rightBookSide">
+									<div id="rightBookSideIconsBox">
+										<img id="infoIcon" class="iconsBoxIcons iconHover" src="assets/introWelt/Intro_Welt_3_Lesezerichen_Info_w.svg" alt="Bild konnte nicht geladen werden">
+										<img id="rassenIcon" class="iconsBoxIcons iconHover" src="assets/introWelt/Intro_Welt_3_Lesezerichen_Rassen_w.svg" alt="Bild konnte nicht geladen werden">
+										<img id="religionIcon" class="iconsBoxIcons iconHover" src="assets/introWelt/Intro_Welt_3_Lesezerichen_religion_w.svg" alt="Bild konnte nicht geladen werden">
+										<img id="magieIcon" class="iconsBoxIcons iconHover" src="assets/introWelt/Intro_Welt_3_Lesezerichen_magie_w.svg" alt="Bild konnte nicht geladen werden">
+									</div>
+									<!-- Beginn right side Rassen -->
+									<div>
+										<div id="orksRight" class="rightSideBox">
+											<h2>Orgrosh – Orks</h2>
+											<p>
+												Die Orgrosh sind eine der furchteinflößenden 
+												Völker von Astharos. Sie werden 
+												meist als Abscheulichkeiten betrachtet und 
+												deswegen in den meisten Fällen gemieden. Aufgrund der Geschehnisse in den Kämpfen zwischen der Vereinigten Völker und der Schwarzen Klinge, werden Orks eher mit 
+												verachtenden Blicken beäugt, da Orgrosh einen 
+												großen Teil der Armee der Schwarzen Klinge 
+												ausmachten.
+											</p>
+										</div>
+										<div id="elbenRight" class="rightSideBox">
+											<h2>Arondal – Elben</h2>
+											<p>
+												Eines der edelsten Geschöpfe in dieser Welt 
+												sind die Arondal. Sie haben ein langes Leben 
+												und Besitzen ihren Ursprung in der Natur. Ihnen 
+												sind Traditionen sehr wichtig, finden mit 
+												anderen Völkern eher weniger gut Anklang. 
+												Existiert allerdings so eine Bindung, kann 
+												das Band zwischen den Wesen nur schwer 
+												getrennt werden. Elben sind somit äußerst soziale 
+												und loyale Wesen. 
+											</p>
+										</div>
+										<div id="halbElbenRight" class="rightSideBox">
+											<h2>Halb-Elben</h2>
+											<p>
+												Halb-Elben sind das Ergebnis zwischen Menschen 
+												und Elben. Der Grund wieso die Menschen von 
+												Elben so angezogen fühlen ist die Eigenschaft 
+												der unergründlichen Schönheit. Auch die Elben 
+												sind wiederum von den Menschen fasziniert, da 
+												sie deren ungestüme und impulsive Art ziemlich 
+												erfrischend finden. 
+											</p>
+										</div>
+										<div id="halblingRight" class="rightSideBox">
+											<h2>Helban – Halbling</h2>
+											<p>
+												Das von Natur aus friedlichste Volk sind die 
+												Helban. Sie haben eine eher optimistische und 
+												gutmütige Art und besitzen ein fast schon 
+												unheimliches Glück. Sie besitzen einen starken 
+												Drang zum Wandern, weshalb schon viele Helban 
+												in manch Abenteuer geraten sind. Auch wenn 
+												sie keine sonderliche Größe besitzen, sind sie 
+												sehr mutig und neugierig. 
+											</p>
+										</div>
+										<div id="zwergeRight" class="rightSideBox">
+											<h2>Taragdul – Zwerge</h2>
+											<p>
+												In der Welt von Astharos gelten die Taragdul als 
+												ein merkwürdiges Volk. Sie gelten als ein gierig 
+												und stoisches Volk, weshalb sie sich auch viele 
+												in die Berge zurückgezogen haben. Durch ihren 
+												Rückzug haben sie geneigt anderen Völkern eher 
+												misstrauisch zu begegnen. Zwerge sind äußerst 
+												mürrische und humorlose Bergarbeiter, was 
+												vielleicht durch ihre Geschichte sich entwickelt 
+												hat. 
+											</p>
+										</div>
+										<div id="katzenmenschenRight" class="rightSideBox">
+											<h2>Felica – Katzenmenschen</h2>
+											<p>
+												Die Felica sind das wohl sonderbarste Volk der 
+												Welt. Sie stammen von einem anderen Teil der 
+												Welt, haben sich aber schon vor Jahrhunderten 
+												in dieser Welt verbreitet. Sie gelten als äußerst 
+												schnell und leichtfüßig, weswegen viele von 
+												ihnen als Diebe tätig sind. Sie sind aber auch gute 
+												Händler, die meisten von ihnen als „Fahrende 
+												Händler“ bekannt. 
+											</p>
+										</div>
+										<div id="mischwesenRight" class="rightSideBox">
+											<h2>Pessmos – Mischwesen</h2>
+											<p>
+												Die Pessmos sind Mischwesen aus Tier und 
+												Mensch. Mal Mensch und Fisch, Mensch und 
+												Kuh und vieles weiteres. Ihren Ursprung haben 
+												sie durch den Krieg zwischen den Vereinigten 
+												Völkern und der Schwarzen Klinge, wo Dunkle und 
+												Helle Magie aufeinander prallten und einen Riss 
+												in der Realität bildeten. Aufgrund 
+												ihres Ursprungs und deren Aussehen werden 
+												eher als eine einfache Abscheulichkeiten 
+												angesehen.
+											</p>
+										</div>
+									</div>
+									<!-- Ende right side Rassen -->
+									<!-- Beginn right side Religion -->
+									<div>
+										<div id="thyrosRight" class="rightSideBox">
+											<h2>Thyros - Gott des Himmels</h2>
+											<p>
+												Thyros gilt in dieser Welt als Gottvater aller 
+												bekannten und heiligen Götter, der Welt, 
+												Lebewesen, Pflanzen und der Zeit. Thyros erschuf 
+												seine Kinder und die Menschen nach seinem 
+												Abbild, doch in welcher Gestalt man ihnen 
+												begegnet entscheiden die Götter selbst. 
+												Alle anderen Götter werden nicht von Thyros und 
+												seinen Anhängern akzeptiert und gelten als eine 
+												andere Glaubensrichtung.
+											</p>
+										</div>
+										<div id="arisRight" class="rightSideBox">
+											<h2>Aris – Göttin der Jagd</h2>
+											<p>
+												Aris, Göttin der Jagd schützt all diejenigen, 
+												welche sich als Jäger von Tieren und Kreaturen 
+												behaupten. Sowohl Menschen als auch Elfen, Orks 
+												und Pessmos glauben an Aris. Ihre Gläubigen 
+												feiern einmal im Jahr, am 34. des Zyklus Kantos, 
+												das Fest des J´egris, auch Fest der Jagd genannt. 
+												Überall in der Welt gibt es kleine Schreine, um 
+												Aris zu huldigen und dessen Anwesenheit zu 
+												stärken.
+											</p>
+										</div>
+										<div id="begrendRight" class="rightSideBox">
+											<h2>Begrend – Gott des Weines und der Völlerei</h2>
+											<p>
+												Begrend, der Gott des Weines und der Völlerei 
+												ist zuständig für allerlei Festivitäten, Weine und 
+												Völlereien in der Welt von Astharos. Er wird vor 
+												jedem Getränk gepriesen und an ihn glauben 
+												so gut wie alle Rassen. Begrend erschuf für Astharos Trauben 
+												und Früchte, sodass man aus ihnen die leckersten 
+												Weine und Schnäpse herstellen kann.
+											</p>
+										</div>
+										<div id="trendirRight" class="rightSideBox">
+											<h2>Trendir – Gott des Handwerks</h2>
+											<p>
+												Handwerker, Gebäude und allerlei von Hand 
+												geschaffene Dinge, vereinen sich unter Trendir, 
+												dem Gott des Handwerks. Menschen, Elfen, 
+												Zwerge und Pessmos preisen ihn vor jeder Tat, 
+												in welcher sie etwas erbauen und erschaffen. 
+												Beim Fest des Hedrosh, dem Fest von Hammer 
+												und Amboss, huldigen sie am 52. des Zyklus um 
+												seinem Segen.
+											</p>
+										</div>
+										<div id="gilithRight" class="rightSideBox">
+											<h2>Gilith – Göttin der Musik und Kunst</h2>
+											<p>
+												Musik, die Dichtkunst und allerlei künstlerisches 
+												Tun wurde von der Göttin Gilith für Astharos 
+												erschaffen. Barden, Akrobaten und andere 
+												Künstler, vorwiegend Menschen oder Halblingen, 
+												beten sie an. Laut Legenden ist die Stimme Giliths, 
+												das schönste was ein Wesen hören könnte und 
+												sogar die härtesten Kämpfer und Kämpferinnen 
+												zum Tanzen bewegen.
+											</p>
+										</div>
+										<div id="koshkaRight" class="rightSideBox">
+											<h2>Koshka – Gott der Magie und des Wissens</h2>
+											<p>
+												Laut den Gläubigen von Koshka, sei er der 
+												Weiseste unter den Göttern. Alle Magie und alles Wissen zu entdecken und verstehen 
+												ist das hehrste Ziel von Koshka. Thoronath, das 
+												Fest der ewigen Magie, ist eine Versammlung 
+												aller Magier und Gelehrte dieser Welt, bei dem 
+												sie alles entdeckte Wissen in der ewigen heiligen 
+												Thoronath-Bibliothek lagern und versammeln. 
+											</p>
+										</div>
+										<div id="seonoraRight" class="rightSideBox">
+											<h2>Seonora – Göttin der Liebe und Zuneigung</h2>
+											<p>
+												Seonora, die Göttin der Liebe und Zuneigung, 
+												wird bei Hochzeiten angepriesen und segnet 
+												die Zukunft der Liebenden. Seonora selbst war 
+												einst verliebt, doch ihr Geliebter Herbanas wurde 
+												durch einen fallenden Stern getötet, wodurch sie 
+												entschieden hat, dass alle wahrlich Liebenden 
+												durch sie geschützt werden.
+											</p>
+										</div>
+										<div id="fanuinRight" class="rightSideBox">
+											<h2>Fanuin – Gott des Lichts</h2>
+											<p>
+												Fanuin, der Gott des Lichtes, ist der heiligste 
+												und höchste Gott der Elben. Für ihn ist er der 
+												Erschaffer des Mondes und der Nacht. Er schützt 
+												und segnet sie bei all ihrer Taten, ist verantwortlich 
+												für ihr langes Leben und ihre körperlichen 
+												Überlegenheit. Seinen 
+												Schutz und Anwesenheit sind ihnen heiliger als 
+												alles andere und reagieren sehr erzürnt falls man 
+												schlecht über ihn redet.
+											</p>
+										</div>
+										<div id="varrakisRight" class="rightSideBox">
+											<h2>Varrakis – Gott des Kampfes und Krieges</h2>
+											<p>
+												Blut, Krieg und Kampf sind die Hauptaspekte im 
+												Leben eines Orks und dessen Gottheit Varrakis. 
+												Laut Sagen und Legenden erschuf Varrakis die 
+												Orks aus dessen Blut und Gedärmen und formte 
+												sie nach seinem Abbild. Orks huldigen ihm bei 
+												jedem Kampf und feiern in seinem Namen bei 
+												Siegen und Erfolgen.
+											</p>
+										</div>
+									</div>
+									<!-- Ende right side Religion -->
+									<!-- Beginn right side Magie -->
+									<div id="magieRight">
+										<div id="elementRight" class="rightSideBox">
+											<h2>Elementarmagie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Elementar.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Eine der einfachsten Magiearten ist das 
+												Beherrschen der Elemente. Dazu gehört das 
+												Beherrschen von Feuer, Wasser, Luft und Erde. 
+												Wenn die Zauber stärker 
+												sein sollen, muss man sich in der Nähe des 
+												zugehörigen Elementes befinden. 
+											</p>
+											<div>
+												<audio id="elementRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/elementarmagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="naturRight" class="rightSideBox">
+											<h2>Natur<wbr>magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Die Naturmagie umschreibt alle Zauber und 
+												Rituale, welche die Natur beeinflussen. Darunter 
+												fallen allerlei Pflanzen und Tiere, Gifte und 
+												Extrakte und dem Verändern von Holz.
+											</p>
+											<div>
+												<audio id="naturRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/naturmagie(1).mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="schutzRight" class="rightSideBox">
+											<h2>Schutz- & Verstärkungs<wbr>magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Schutz_und_Verstaerkung.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Schutz vor Magieangriffen oder normalen 
+												Angrffen und das Verstärken des Körpers bilden 
+												den Hauptteil des dieser Magie-Art.
+											</p>
+											<div>
+												<audio id="schutzRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/schutzmagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="beschwoerRight" class="rightSideBox">
+											<h2>Beschwörungs<wbr>magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Beschwörungsmagie.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Zu der Beschwörungsmagie gehören das 
+												Beschwören von allerlei Geisterwesen, Untoten, 
+												Tierwesen, Feen oder sogar Waffen.
+											</p>
+											<div>
+												<audio id="beschwoerRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/beschwörung.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="illusionRight" class="rightSideBox">
+											<h2>Illusions<wbr>magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Illusionsmagie.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Illusionen, Unsichtbarkeit, Beeinflussen von 
+												geistigen Prozessen oder Geräusche vermindern 
+												sind Bestandteil der Illusionsmagie. Nicht jeder 
+												kann und will diese Art von Magie verstehen 
+												und erklärt sich manchmal sogar als Göttliche 
+												Fügung.
+											</p>
+											<div>
+												<audio id="illusionRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/Illusionsmagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="wiederherRight" class="rightSideBox">
+											<h2>Wiederherst.<wbr>magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Wiederherstellungsmagie.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Eine Vielzahl an Heilzaubern und 
+												Heilungen gehören zu dem Repertoire der 
+												Wiederherstellungsmagie.
+												Wie die Elementarmagie, ist auch diese Art der 
+												Magie leicht zu erlernen. 
+											</p>
+											<div>
+												<audio id="wiederherRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/wiederherstellungsmagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="bannmagieRight" class="rightSideBox">
+											<h2>Bannmagie und Flüche</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Bannmagie_und_Flueche.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Das Werfen, Brechen und Annullieren von 
+												Flüchen, Bannkreisen und anderen Zauber sind 
+												Teil der Bann- und Fluchmagie.
+											</p>
+											<div>
+												<audio id="bannmagieRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/Bannmagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="fortbewegungRight" class="rightSideBox">
+											<h2>Fort<wbr>bewegungs<wbr>magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Fortbewegungsmagie.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Mit diesen Zaubersprüchen kann die Bewegung 
+												von jeglichen Lebewesen erhöht werden. 
+												Ebenfalls können die Ausdauer und Sprungkraft 
+												erhöht werden.
+											</p>
+											<div>
+												<audio id="fortbewegungRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/fortbewegungsmagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="wissensRight" class="rightSideBox">
+											<h2>Erkenntnis<wbr>magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Wissensmagie.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Rätsel und Unerklärliches sind Teil der 
+												Erkenntnismagie. Mit dieser Art der Magie 
+												lassen sich Magische Sprachen und Runen 
+												entschlüsseln, Inschriften lesen und Telepathie 
+												nutzen. 
+											</p>
+											<div>
+												<audio id="wissensRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/erkenntnismagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+										<div id="dunkleRight" class="rightSideBox">
+											<h2>Dunkle Magie</h2>
+											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/DunkleMagie.svg" alt="Bild konnte nicht geladen werden">
+											<p class="iconMarginMagie">
+												Dunkle Magie gehört in Astharos und den 
+												anderen Kontinenten zu dem verbotenen Zauber. 
+												Jegliche Zauber werden gesetzlich geahndet, 
+												weswegen die meisten Zauberer davon ablassen 
+												oder ein Leben in Dunkelheit führen.
+											</p>
+											<div>
+												<audio id="dunkleRightSound" class="audioControls magicAudio" controls>
+													<source src="assets/audio/Magie/dunklemagie.mp3" type="audio/mp3">
+												</audio>
+											</div>
+										</div>
+									</div>
+									<!-- Ende right side Magie -->
+								</div>
+							</div>
+						</div>
+						<div id="weltHochTief">
+							<div id="hoehenUndTiefen" class="yellowFrame redFrame">
+								<h2>Die Höhen und Tiefen Astahros</h2>
+								<div id="secondRedBox">
+									<div>
+										<p class="yellowBoxPara erklaertext">
+											Die Höhen und Tiefen Astharos – Teil 1, soll der 
+											Einstieg in die Welt von Astharos sein und 
+											diejenigen Nutzer ansprechen, welche nicht 
+											viel Erfahrung mit Pen & Paper besitzen. Egal 
+											ob Spieler oder Spielmeister, die Erklärungen 
+											und die Komplexität sind sehr einfach gehalten, 
+											sodass ein simpler Einstieg für jeden möglich ist. 
+											Es werden in diesem viele Freiheiten eingeräumt 
+											um das erste Abenteuer leicht zu gestalten.
+											<br><br>
+											Im ersten Teil von „Die Höhen und Tiefen Astharos“ 
+											treffen sich, die bis dato noch unbekannten 
+											,Charaktere (Spieler) in einer Taverne und 
+											werden Zeuge eines skrupellosen Verbrechens. 
+											Entscheiden sich die Spieler, diesem Verbrechen 
+											und dem Hintergrund dahinter nachzugehen, 
+											erwartet sie ein eindrucksvolles Abenteuer in der 
+											Welt von Ashtaros. Es führt sie über das Hochland-Gebiet von Mithrand bis über und unter die 
+											Berge des Terrascall-Gebirges. Dabei begegnen 
+											sie allerlei Personen und Wesen und kommen 
+											an verschiedenen Orten vorbei. Wie genau sie 
+											die Welt entdecken, wird dem Spielmeister und 
+											dessen Fantasie und den Spielern und deren 
+											Handlungen überlassen.
+										</p>
+									</div>
+								</div>
+								<div id="weltHochTiefCrowBox">
+									<div id="weltHochTiefTextContainer">
+										<img id="weltHochTiefCrow" src="assets/Copy_of_crow-v2_sit.png" alt="Bild konnte nicht geladen werden">
+										<a href="/assets/downloads/Die_Höhen_und_Tiefen_Astharos-Teil1.pdf" download>
+										<button type="button" id="weltDownloadBtn">Download PDF</button>
+										</a>								
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rahmenUebergang">
+						<img src="assets/rahmenUebergang.svg" alt="Rahmen konnte nicht angezeigt werden">
+					</div>
+				</section>
+				<!-- Bereich: Karte -->
+				<section id="karte" class="posRelative">
+					<div id="scroll-to"></div>
+					<div id="karteHrefAnchor"></div>
+					<div id="karteContainer">
+						<h1 id="h1Karte">Karte</h1>
+						<div id="kartenDiv">
+							<img id="karteBackground" src="assets/karte/background_maps_2.svg" alt="Bild konnte nicht geladen werden">
+							<div id="karteAnchor" class="anchor"></div>
+							<div id="karteBild">
+								<div id="mapContainer">
+									<img id="kartePNG" src="assets/karte/Astharos.png" alt="Bild konnte nicht geladen werden">
+									<div id="icons">
+										<div id="iconAsthos" class="kartenIcons grow" >
+											<img src="assets/karte/Icons_Staedte/Asthos_Icon.svg" alt="Bild konnte nicht geladen werden">
+										</div>
+										<div id="iconFlostapor" class="kartenIcons">
+											<img src="assets/karte/Icons_Staedte/Flostapor_icon.svg" alt="Bild konnte nicht geladen werden">
+										</div>
+										<div id="iconGlarius" class="kartenIcons">
+											<img src="assets/karte/Icons_Staedte/Glarius_icon.svg" alt="Bild konnte nicht geladen werden">
+										</div>
+										<div id="iconHerbanas" class="kartenIcons">
+											<img src="assets/karte/Icons_Staedte/Herbanas_icon.svg" alt="Bild konnte nicht geladen werden">
+										</div>
+										<div id="iconMiratan" class="kartenIcons">
+											<img src="assets/karte/Icons_Staedte/Miratan_icon.svg" alt="Bild konnte nicht geladen werden">
+										</div>
+										<div id="iconNuberios" class="kartenIcons">
+											<img src="assets/karte/Icons_Staedte/Nuberios.svg" alt="Bild konnte nicht geladen werden">
+										</div>
+										<div  id="iconThondbaren" class="kartenIcons">
+											<img src="assets/karte/Icons_Staedte/Thondbaren.svg" alt="Bild konnte nicht geladen werden">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div>
+								<audio id="soundAsthos">
+									<source src="assets/audio/StadtSound/asthos.mp3">
+								</audio>
+								<audio id="soundFlostapor">
+									<source src="assets/audio/StadtSound/flostapor.mp3">
+								</audio>
+								<audio id="soundGlarius">
+									<source src="assets/audio/StadtSound/glarius.mp3">
+								</audio>
+								<audio id="soundHerbanas">
+									<source src="assets/audio/StadtSound/herbanas.mp3">
+								</audio>
+								<audio id="soundMiratan">
+									<source src="assets/audio/StadtSound/miratan.mp3">
+								</audio>
+								<audio id="soundNuberios">
+									<source src="assets/audio/StadtSound/nuberios.mp3">
+								</audio>
+								<audio id="sounThondbaren">
+									<source src="assets/audio/StadtSound/thondbaran.mp3">
+								</audio>
+							</div>
+							<div id="stadtAsthos" class="stadtDiv">
+								<div class="anchor"></div>
+								<img id="asthosMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Asthos_Links.svg" alt="Bild konnte nicht geladen werden">
+								<div class="redFrame stadtTextBox">
+									<div class="yellowFrame">
+										<h2>Asthos</h2>
+										<p class="stadtText">
+											Asthos und seine weiten Umlande gelten als der 
+											wichtigste Sammel-, Handel- und Treffpunkt in 
+											Astharos. In ihr steht der Bergfried Wolkhain, 
+											benannt nach seinem Erbauer und ersten König 
+											Drendon. Der derzeitige Herrscher von Astharos 
+											und dessen Hauptstadt, ist der Truchsess 
+											Tabron, welcher das Land mit eisenharter Hand 
+											führt. Die ganze Stadt und der Bergfried selbst 
+											sind umrandet von einer hohen Mauer und 
+											mächtigen Befestigungsanlagen, welches sie 
+											vor Gefahren aus dem Umland schützt. In Asthos 
+											gibt es vielerlei Schenken, die Glaubenskirche 
+											von Thyros, Handwerksbetriebe, Bordelle und 
+											viele andere Gebäude, welche für das Wohl der 
+											Bürger sorgen. Hier versammeln sich allerlei 
+											Rassen und versuchen in Frieden und Einigkeit 
+											zu leben. Die einzige Rasse, welche sich in 
+											Asthos kaum aufhält, sind die Orgrosh, da sie 
+											Aufgrund der Geschehnisse der Vergangenheit 
+											mit verachteter Blicke beäugt werden.
+										</p>
+									</div>
+								</div>
+								<button class="backToMap">Zurück zur Karte</button>
+								<img id="asthosMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Asthos_Rechts.svg" alt="Bild konnte nicht geladen werden">
+							</div>
+							<div id="stadtFlostapor" class="stadtDiv">
+								<div class="anchor"></div>
+								<img id="flostaporMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/flostapor_Links.svg" alt="Bild konnte nicht geladen werden">
+								<div class="redFrame stadtTextBox">
+									<div class="yellowFrame">
+										<h2>Flostapor</h2>
+										<p class="stadtText">
+											Die goldene Stadt Flostapor, welche in der Mitter 
+											der Insel Ilfheim steht, ist bekannt für ihre Weine, 
+											Schnäpse und Freudenhäuser. Der Adel und 
+											Hohe Klerus nutzt bereitwillig die Güter der Insel 
+											und dessen freude bringenden Gesellschaften. 
+											Ebenfalls sind die Stadt und Insel als Urlaubs- und Heimatort der hohen Gesellschaft berühmt. 
+											Die Stadt selbst wurde aus dem feinsten reinsten 
+											Marmor, edlen Hölzern und verziertem Stein 
+											erbaut, welche in der Abendsonne in allen Farben 
+											erstrahlt. Aufgrund der Vielzahl an Festen und 
+											Feiern ist selten Stille in Flostapor und an jeder 
+											Ecke etwas zu finden.
+										</p>
+									</div>
+								</div>
+								<button class="backToMap">Zurück zur Karte</button>
+								<img id="flostaporMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/flostapor_rechts.svg" alt="Bild konnte nicht geladen werden">
+							</div>
+							<div id="stadtGlarius" class="stadtDiv">
+								<div class="anchor"></div>
+								<img id="glariusMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Glarius_links.svg" alt="Bild konnte nicht geladen werden">
+								<div class="redFrame stadtTextBox">
+									<div class="yellowFrame">
+										<h2>Glarius</h2>
+										<p class="stadtText">
+											Die See- und Handelsstadt Glarius, liegt 
+											inmitten des Sees Weitengraas. Die primären 
+											Handelsgüter der Stadt kommen aus der 
+											Fischerei und anderen Gütern, welche für die 
+											Schifffahrt gebraucht werden. Erbaut wurde 
+											die Stadt auf riesigen Pfählen, erschaffen aus 
+											den in Seedeheim zu findenden Pirubäumen. 
+											Auf diesen Pfählen entstand mit der Zeit eine 
+											riesige Stadt aus Holz und Stein. Ähnlich zu einer 
+											normalen Stadt gibt es auch hier verschiedene 
+											Gebäude und Gildenhäuser.
+										</p>
+									</div>
+								</div>
+								<button class="backToMap">Zurück zur Karte</button>
+								<img id="glariusMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Glarius_rechts.svg" alt="Bild konnte nicht geladen werden">
+							</div>
+							<div id="stadtHerbanas" class="stadtDiv">
+								<div class="anchor"></div>
+								<img id="herbanasMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Herbanas_links.svg" alt="Bild konnte nicht geladen werden">
+								<div class="redFrame stadtTextBox">
+									<div class="yellowFrame">
+										<h2>Herbanas</h2>
+										<p class="stadtText">
+											Im Westen Mithrand liegt die Hauptstadt 
+											Herbanas, welche auch als Stadt der Kunst und 
+											des Gesangs bekannt ist. Inmitten der Stadt 
+											liegt die Bardenakademie Götteburg. Die hier 
+											gelernten Barden gelten als die besten Künstler 
+											Astharos. Die Stadt selbst steht am Ufer des 
+											Wolkensee´s Seonora. Laut Legenden wurde 
+											der See nach Thyros Tochter Seonora benannt, 
+											welche den See mit ihren Tränen füllte als ihr 
+											Geliebter Herbanas am Rande einer tiefen Kluft 
+											starb, die durch einen fallenden Stern geschaffen 
+											wurde. Aufgrund dieser Legende wurde die Stadt 
+											um die Grabstelle von Herbanas erbaut, sodass 
+											Seonora und Herbanas in ewiger Zeit zusammen 
+											sein können.
+										</p>
+									</div>
+								</div>
+								<button class="backToMap">Zurück zur Karte</button>
+								<img id="herbanasMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Herbanas_rechts.svg" alt="Bild konnte nicht geladen werden">
+							</div>
+							<div id="stadtMiratan" class="stadtDiv">
+								<div class="anchor"></div>
+								<img id="miratanMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Miratan_Links.svg" alt="Bild konnte nicht geladen werden">
+								<div class="redFrame stadtTextBox">
+									<div class="yellowFrame">
+										<h2>Miratan</h2>
+										<p class="stadtText">
+											Miratan, die Stadt in den Bergen gilt als 
+											unglaublichste Bauwerk dieser Welt. Häuser und 
+											Gebäude wurden am Fuße des Berges, sowie 
+											in dessen Hängen geschlagen, und thronen 
+											über der Quelle Miratans. Die Stadt wurde vor 
+											tausenden von Jahren von Zwergen erbaut und 
+											schützten bis heute das Leben aller Lebewesen in 
+											der Stadt. Die Gebäude und Straßen schlängeln 
+											sich sowohl durch, als auch am Berg entlang 
+											und sind über riesige Brücken miteinander 
+											verbunden. Geschaffen wurde die Stadt durch 
+											den härtesten Stein Terras, welcher überall in 
+											Terrascall zu finden ist. Die Gebäude und Brücken 
+											sind verziert durch Zwergen Metalle, Stahl und 
+											Silber und schimmern in der aufgehenden 
+											Sonne.
+										</p>
+									</div>
+								</div>
+								<button class="backToMap">Zurück zur Karte</button>
+								<img id="miratanMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Miratan_Rechts.svg" alt="Bild konnte nicht geladen werden">
+							</div>
+							<div id="stadtNuberios" class="stadtDiv">
+								<div class="anchor"></div>
+								<img id="nuberiosMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Huberios_Links.svg" alt="Bild konnte nicht geladen werden">
+								<div class="redFrame stadtTextBox">
+									<div class="yellowFrame">
+										<h2>Nuberios</h2>
+										<p class="stadtText">
+											Wenn das Schlagen von Hammer auf Amboss 
+											zu hören ist, dann ist Nuberios nicht mehr weit 
+											entfernt ist. Die Baumeistergilde “Hammer und 
+											Eisen” ist der Grund für den Trubel und Reichtum 
+											der Stadt. Jeder, der sich als Handwerker beweisen 
+											will, reist nach Nuberios und will von den Besten 
+											lernen. Minerale und Erze bezieht die Stadt aus 
+											deren eigener Miene, welche in den Berg Erios 
+											geschlagen wurde.
+										</p>
+									</div>
+								</div>
+								<button class="backToMap">Zurück zur Karte</button>
+								<img id="nuberiosMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Huberios_Rechts.svg" alt="Bild konnte nicht geladen werden">
+							</div>
+							<div id="stadtThondbaran" class="stadtDiv">
+								<div class="anchor"></div>
+								<img id="thondbaranMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Chondbaran_links.svg" alt="Bild konnte nicht geladen werden">
+								<div class="redFrame stadtTextBox">
+									<div class="yellowFrame">
+										<h2>Thondbaran</h2>
+										<p class="stadtText">
+											Môr-eryn, der Dunkle Wald, umrandet Thonbaran, 
+											die Stadt der Elben. Inmitten des Waldes wurde 
+											eine Stadt aus Stein und Bäumen geschlagen, 
+											welche eines Elben würdig ist. Edle Gebäude 
+											und Brücken aus den härtesten Baumstämmen 
+											des Giliat-Baums bilden ein riesiges Labyrinth, in 
+											denen sich nur ein Elb zurechtfinden kann. Am 
+											höchsten Punkt der Stadt steht der Thron des 
+											Elbenherrn Dírion, der seine Stadt von oben herab 
+											mit weiser und gerechter Hand führt. Aufgrund 
+											der im Wald geschaffenen Stadt, werden dessen 
+											Bewohner auch oft als Wald-Elben bezeichnet.
+										</p>
+									</div>
+								</div>
+								<button class="backToMap">Zurück zur Karte</button>
+								<img id="thondbaranMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Chondbaran_rechts.svg" alt="Bild konnte nicht geladen werden">
+							</div>
+						</div>
+						<div class="rahmenUebergang">
+							<img src="assets/rahmenUebergang.svg" alt="Rahmen konnte nicht geladen werden">
+						</div>
+					</div>
+				</section>
+				<!-- Bereich: Tools -->
+				<section id="tools" class="posRelative">
+					<div id="toolsHrefAnchor"></div>
+					<div class="sectionStart">
+						<h1 id="h1Tools">Tools</h1>
+						<div>
+							<div id="toolsSpeech">
+								<p id="toolsSpeechText">
+									Gebe einfach deine primären Werte in den "Asphax 
+									Brandideins Werterechner" ein und schon spuckt 
+									er dir automatisch deine sekundären aus, ohne
+									dass du das mühselig in den Taschenrechner eingeben
+									musst!
+								</p>
+							</div>
+							<img id="toolsCrow" class="ravenHover" src="assets/Copy_of_crow-v2_sit.png" alt="Bild konnte nicht geladen werden">						
+						</div>
+					</div>
+					<div id="werterechner">
+						<div class="bookDiv">
+							<div class="bookFrame">
+								<div class="bookLeftBack"></div>
+								<div class="bookRightBack"></div>
+								<svg class="bookPathSvg">
+									<path class="bookPath" d="M 0 0 C 500 -1 500 30 580 0 C 660 30 660 -1 1160 0" />
+								</svg>
+								<div class="leftBookSide">
+									<div>
+										<h2>ASPHAX BRANDIDEINS WERTERECHNER</h2>
+										<h3>Primärwerte</h3>
+										<div id="inputContainer">
+											<div id="ST" class="inputBox">
+												<label>ST</label>
+												<input type="number" value="12">
+											</div>
+											<div id="AU" class="inputBox">
+												<label>AU</label>
+												<input type="number" value="11">
+											</div>
+											<div id="GE" class="inputBox">
+												<label>GE</label>
+												<input type="number" value="11">
+											</div>
+											<div id="IN" class="inputBox">
+												<label>IN</label>
+												<input type="number" value="8">
+											</div>
+											<div id="CH" class="inputBox">
+												<label>CH</label>
+												<input type="number" value="8">
+											</div>
+											<div id="MB" class="inputBox">
+												<label>MB</label>
+												<input type="number" value="11">
+											</div>
+											<div id="MA" class="inputBox">
+												<label>MA</label>
+												<input type="number" value="7">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="rightBookSide">
+									<div>
+										<h3>Sekundärwerte</h3>
+										<div id="statsDescription">
+											<p>Attacke Nahkampf: </p>
+											<p>Attacke Distanz:</p>
+											<p>Parade:</p>
+											<p>Initiative:</p>
+											<p>Lebensenergie:</p>
+											<p>Mentale Gesundheit:</p>
+											<p>Mentale Kraft:</p>
+										</div>
+										<div id="statsContainer">
+											<p id="AtkNah" class="stats"></p>
+											<p id="AtkDist" class="stats"></p>
+											<p id="Parade" class="stats"></p>
+											<p id="Initiative" class="stats"></p>
+											<p id="Lebensenergie" class="stats"></p>
+											<p id="MentaleGesundheit" class="stats"></p>
+											<p id="MentaleKraft" class="stats"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rahmenUebergang">
+						<img src="assets/rahmenUebergang.svg" alt="Rahmen konnte nicht angezeigt werden">
+					</div>
+				</section>
+				<section id="diceRoller">
+					<div id="diceRollerHrefAnchor"></div>
+					<h1>Tools</h1>
+					<div class="backgroundWood">
+						<div id="diceBox">
+							<div id="diceInnerBox">
+								<h2 id="diceH2">Dice Roller</h2>
+								<svg id="dice" version="1.1" xmlns="http://www.w3.org/2000/svg" width="174" height="200" viewbox="0 0 173.20508075688772 200">
+									<path fill="#754D24" d="M82.27241335952166 2.4999999999999996Q86.60254037844386 0 90.93266739736606 2.4999999999999996L168.87495373796554 47.5Q173.20508075688772 50 173.20508075688772 55L173.20508075688772 145Q173.20508075688772 150 168.87495373796554 152.5L90.93266739736606 197.5Q86.60254037844386 200 82.27241335952166 197.5L4.330127018922194 152.5Q0 150 0 145L0 55Q0 50 4.330127018922194 47.5Z">
+									</path>
+								</svg>
+								<p id="diceZahl"></p>
+							</div>
+							<audio id="diceSound">
+								<source src="assets/audio/dice.mp3">
+							</audio>
+							<button id="roll20" class="rollDiceBtn">20-seitig</button>
+							<button id="roll6" class="rollDiceBtn">6-seitig</button>
+							<button id="roll100" class="rollDiceBtn">100-seitig</button>
+						</div>
+					</div>
+				</section>
+				<section id="atmos">
+					<div id="atmosHrefAnchor"></div>
+					<h1>Atmos</h1>
+					<div id="atmosBeschreibungContainer" class="backgroundWood">
+						<div class="redFrame">
+							<div class="yellowFrame">
+								<p id="atmosBeschreibungPara">Hier findest du Atmosphärische Tracks für alle Städte von Astahros, um ihnen mehr Leben einhauchen zu können.</p>
+							</div>
+						</div>
+						<div id="staedteAtmosContainer">
+							<div class="stadtKachel">
+								<h3>Asthos</h3>
+								<img src="assets/karte/Icons_Staedte/Asthos_Icon.svg" alt="Bild konnte nicht geladen werden">
+								<audio id="atmosAudioAsthos" class="audioControls" controls>
+									<source src="assets/audio/StadtSound/asthos.mp3" type="audio/mp3">
+								</audio>
+							</div>
+							<div class="stadtKachel">
+								<h3>Flostapor</h3>
+								<img src="assets/karte/Icons_Staedte/Flostapor_icon.svg" alt="Bild konnte nicht geladen werden">
+								<audio id="atmosAudioFlostapor" class="audioControls" controls>
+									<source src="assets/audio/StadtSound/flostapor.mp3" type="audio/mp3">
+								</audio>
+							</div>
+							<div class="stadtKachel">
+								<h3>Glarius</h3>
+								<img src="assets/karte/Icons_Staedte/Glarius_icon.svg" alt="Bild konnte nicht geladen werden">
+								<audio id="atmosAudioGlarius" class="audioControls" controls>
+									<source src="assets/audio/StadtSound/glarius.mp3" type="audio/mp3">
+								</audio>
+							</div>
+							<div class="stadtKachel">
+								<h3>Herbanas</h3>
+								<img src="assets/karte/Icons_Staedte/Herbanas_icon.svg" alt="Bild konnte nicht geladen werden">
+								<audio id="atmosAudioHerbanas" class="audioControls" controls>
+									<source src="assets/audio/StadtSound/herbanas.mp3" type="audio/mp3">
+								</audio>
+							</div>
+							<div class="stadtKachel">
+								<h3>Miratan</h3>
+								<img src="assets/karte/Icons_Staedte/Miratan_icon.svg" alt="Bild konnte nicht geladen werden">
+								<audio id="atmosAudioMiratan" class="audioControls" controls>
+									<source src="assets/audio/StadtSound/miratan.mp3" type="audio/mp3">
+								</audio>
+							</div>
+							<div class="stadtKachel">
+								<h3>Nuberios</h3>
+								<img src="assets/karte/Icons_Staedte/Nuberios.svg" alt="Bild konnte nicht geladen werden">
+								<audio id="atmosAudioNuberios" class="audioControls" controls>
+									<source src="assets/audio/StadtSound/nuberios.mp3" type="audio/mp3">
+								</audio>
+							</div>
+							<div class="stadtKachel">
+								<h3>Thondbaren</h3>
+								<img src="assets/karte/Icons_Staedte/Thondbaren.svg" alt="Bild konnte nicht geladen werden">
+								<audio id="atmosAudioThondbaren" class="audioControls" controls>
+									<source src="assets/audio/StadtSound/thondbaran.mp3" type="audio/mp3">
+								</audio>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Bereich: Downloads -->
+				<section id="downloads" class="posRelative">
+					<div id="downloadsHrefAnchor"></div>
+					<div class="sectionStart">
+						<h1 id="h1Downloads">Downloads</h1>
+						<div id="downloadKachelBox">
+							<div class="kachel">
+								<a href="/assets/downloads/Der_Almanach_Astharos_und_dessen_Welt.pdf" download>
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Karte.svg" alt="Bild konnte nicht geladen werden">
+								</a>
+								<h2>Welt</h2>
+								<p>
+									Hier kannst du aktuellen Stand der Welt 
+									downloaden.
+								</p>
+							</div>
+							<div class="kachel">
+								<a href="/assets/downloads/Astharos_Regelwerk-Simple_Booklet.pdf" download>
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Regelwerk.svg" alt="Bild konnte nicht geladen werden">
+								</a>
+								<h2>Regelwerk</h2>
+								<p>
+									Du willst die Regeln wissen und 
+									verstehen? - Dann brauchst du nur dieses 
+									Dokument.
+								</p>
+							</div>
+							<div class="kachel">
+								<a href="/assets/downloads/Die_Höhen_und_Tiefen_Astharos-Teil1.pdf" download>
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Story.svg" alt="Bild konnte nicht geladen werden">
+								</a>
+								<h2>Story</h2>
+								<p>
+									Hier findest du alles zur aktuellen 
+									Geschichte!
+								</p>
+							</div>
+							<div class="kachel">
+								<a href="/assets/downloads/Charakterbogen.pdf" download>
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Charakterbogen.svg" alt="Bild konnte nicht geladen werden">
+								</a>
+								<h2>Charakter</h2>
+								<p>
+									Hiermit kannst du deinen 
+									individuellen Charakter erstellen.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<!-- Audio -->
+		<audio id="sfxChapterFlip">
+			<source src="assets/audio/SoundFX/chapter-flip.wav">
+			<source src="assets/audio/SoundFX/chapter-flip.mp3">
+		</audio>
+		<audio id="sfxPageFlip1">
+			<source src="assets/audio/SoundFX/page-flip-01.wav">
+			<source src="assets/audio/SoundFX/page-flip-01.mp3">
+		</audio>
+		<audio id="sfxPageFlip2">
+			<source src="assets/audio/SoundFX/page-flip-02.wav">
+			<source src="assets/audio/SoundFX/page-flip-02.mp3">
+		</audio>
+		<audio id="sfxPageFlip3">
+			<source src="assets/audio/SoundFX/page-flip-03.wav">
+			<source src="assets/audio/SoundFX/page-flip-03.mp3">
+		</audio>
+		<audio id="backgroundMusic" loop>
+			<source src="assets/audio/bensound-ofeliasdream.mp3">
+		</audio>
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/lib/anime.min.js"></script>
+		<script src="js/lib/noframework.waypoints.min.js"></script>
+		<script src="js/ttrpg.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/welt.js"></script>
+		<script src="js/karte.js"></script>
+		<script src="js/sounds.js"></script>
+		<script src="js/tools.js"></script>
+		<script src="js/diceRoller.js"></script>
+		<script src="js/mobile.js"></script>
+		<script src="js/preloader.js"></script>
+		<script src="js/animation.js"></script>
+		<script src="js/animation2.js"></script>
+	</body>
+</html>

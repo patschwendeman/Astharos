@@ -1,0 +1,86 @@
+/* CSS File: Navigationsleiste */
+
+#navbar {
+  height: calc(var(--height-Navbar) - 0px);
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 1.25rem;
+  padding: 25px 0;
+  transition: 0.4s;
+}
+
+ul {
+  z-index: 20;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  background-color: var(--woodBrown);
+}
+
+li{
+  list-style-type: none;
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.6);
+  transition-duration: .3s;
+}
+
+li a:hover {
+  color: white;
+}
+
+ul li a,
+ul li a:after,
+ul li a:before {
+  transition: all .5s;
+}
+
+ul li a,
+ul li a {
+  position: relative;
+}
+
+ul li a:after {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 2px;
+}
+ul li a:hover:after {
+  width: 80%;
+}
+
+#sliderContainer{
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  display: flex;
+  padding: 22px 75px;
+}
+#navMuteBtn{
+  display: none;
+}
+.soundBtn{
+  height: calc(var(--height-Navbar) / 2);
+  margin-right: 25px;
+}
+.soundBtn:hover{
+  transform: scale(1.1);
+}
+.audioControlsContainer{
+  display: none ;
+}

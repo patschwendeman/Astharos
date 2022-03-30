@@ -1,0 +1,652 @@
+#diceRoller{
+    display: none;
+}
+#mobileNav{
+    display: none;
+}
+body{
+    position: absolute;
+    width: 100vw;
+    overflow-x: hidden;
+}
+#atmos{
+    display: none;
+  }
+
+@media only screen and (max-width: 75rem) and (orientation: portrait){ /* min 1200px */
+    #desktopNav{
+        display: none;
+    }
+    #mobileNav{
+        display: block;
+    }
+    body{
+        margin-top: 0px;
+    }
+    h1{
+        font-size: 3rem;
+        z-index: 2;
+    }
+
+    h2 {
+        z-index: 2;
+    }
+
+    h3{
+        font-size: 100px;
+        z-index: 2;
+    }
+    p{
+        font-size: 40px;
+        line-height: 60px;
+        
+    }
+    .rahmenUebergang{
+        display: none;
+    }
+
+    /* Preloader */
+    #preloaderLogo{
+        width: 95%;
+        top: 30%;
+    }
+    #preloaderButton{
+        width: 50%;
+    }
+    /* Start Bereich */
+    #startframe{
+        height: 100vh;
+        width: 100vw;
+    }
+    #startframeDecoLeft{
+        display: none;
+    }
+    #startframeDecoRight{
+        display: none;
+    }
+    #middleSection{
+        width: 95%;
+    }
+    /* TTRPG Bereich */
+    #sprechblase{
+        background-image: none;
+        left: 0px;
+        top: 0px;
+    }
+    #sprechblase > p {        
+        max-width: 80%;
+        margin: 10%;
+        padding: 0px;
+    }
+    #crowTTRPG {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        width: 80%;
+        margin: 10%;
+    }
+    #ttrpgCrowandSpeech{
+        display: none;
+    }
+    #ttrpgNav {
+        min-height: 150px;
+    }
+    #ttrpgNav > h1 {
+        top: 0px;
+    }
+
+    #ttrpgNavbar, #contentDesktopTTRPG{
+        display: none;
+    }
+    #mobileTTRPG{
+        display: block;
+    }
+
+    .accordion {
+        background-color: var(--woodBrown);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+    .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: black;
+        float: right;
+        margin-left: 5px;
+    }
+    .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }    
+    .active {
+        opacity: 0.8;
+        color: black;
+    }    
+    .accPanel {
+        padding: 0 18px;
+        background-color: var(--pergamentWhite);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .accPanel > h2{
+        color: black;
+    }
+    .accPanel > p{
+        font-size: 18px;
+        line-height: normal;
+        text-align: left;
+    }
+    #mobileWasIstVideo{
+        width: 96%;
+        margin: 2%;
+        height: 54vw;
+    }
+    #mobileWasIstFragen{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        background-image: url("../assets/ttrpg/Intro_TTRPG_2_Textbox_2.svg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: left;
+        position: relative;
+        left: 10%;
+        margin-bottom: 20px;
+    }
+    #mobileWasIstFragen > p{
+        font-size: 18px;
+        line-height: normal;
+        margin: 20px;
+        text-align: left;
+    }
+    #mobileWasBraucheBild{
+        width: 96%;
+        margin: 2%;
+        margin-bottom: 20px;
+        height: auto;
+        border: solid rgb(92, 60, 40) 2px;
+    }
+
+    /* Karte Bereich */
+    #karte{
+        display: none;
+    }
+    /* Welt Bereich */
+    #weltBook{
+        display: none;
+    }
+    #weltStart{
+        height: auto;
+    }
+    #weltStart h1{
+        position: relative;
+        top: 0px;
+    }
+    #weltAnimationsfilmTafel{
+        display: none;       
+    }
+    #animationsfilmWelt{
+        width: 93%;
+        margin: 2%;
+        height: auto;
+        position: relative; 
+        top: 0px;
+        left: 0px;
+        transform: none;
+        margin-bottom: 50px;
+    }
+    .threeHigh{
+        height: auto;
+    }
+    #weltEinstieg{
+        height: auto;
+        width: 100%;
+        position: relative;
+        left: 0px;
+        transform: none;
+    }
+    #abenteuerEinstieg{
+        width: calc(100% - 10px);
+        height: auto;
+        position: relative;
+        left: 0px;
+        transform: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #firstRedBox{
+        margin-top: 0px;
+    }
+    .redFrame{
+        margin: 10px;
+        width: calc(100% - 30px);
+    }
+    .yellowBoxPara{
+        margin: 20px;
+        font-size: 18px;
+        line-height: normal;
+        text-align: left;
+    }
+    #weltHochTief{
+        display: none;
+    }
+    /* Tools Bereich */
+    #tools{
+        display: none;
+    }
+
+    #diceRoller{
+        display: block;
+    }
+    #diceBox{
+        width: 90vw;
+        height: 100vh;
+        margin: auto;        
+        padding-top: 10px;
+        
+    }
+
+    #diceH2{
+        position: relative;
+        top: -5%;
+    } 
+
+    #diceInnerBox{
+        width: 100%;
+        height: 60%;
+        position: relative;
+        top: 4%;
+        background-color: var(--pergamentWhite);
+        padding-top: 10%;
+    }
+    #dice{
+        width: 80%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #diceZahl{
+        font-size: 1000%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 24%;
+        color: white;
+    }
+    #rollDiceBtn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 62%;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        background-color: var(--pergamentWhite);
+        display: none;
+    }
+    .rollDiceBtn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        background-color: var(--pergamentWhite);
+    }
+    #roll20{
+        top: 75%;
+    }
+    #roll6{
+        top: 82.5%;
+    }
+    #roll100{
+        top: 90%;
+    }
+    #radioField{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90%;
+        width: 80%;
+        height: fit-content;
+        text-align: center;
+        font-size: 18px;
+        border: none;
+    }
+
+    /* Atmos Bereich */
+    #atmos{
+        display: block;
+        position: relative;
+    }
+    #atmosBeschreibungContainer{
+        padding-top: 10px;
+    }
+    #atmosBeschreibungPara{
+        font-size: 18px;
+        line-height: normal;
+        text-align: center;
+    }
+    #staedteAtmosContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stadtKachel{
+        flex-basis: 45%;
+        margin: 2.5%;
+        height: 50vw;
+        position: relative;
+    }
+    .stadtKachel > audio{
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .stadtKachel > h3{
+        font-size: 18px;
+        line-height: normal;
+    }
+    /* Download Bereich */
+    #downloadKachelBox{
+        width: 80%;
+    }
+    .kachel {
+        width: 90%;
+        margin: 5%;
+    }
+    .kachel p{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .kachel h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+
+    /* Mobile Navigartion */
+    .mobileLink {
+        text-decoration: none;
+        color: #1E1E23;
+        opacity:1;
+        font-family: 'work sans', sans serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        transition: 200ms;
+      }
+    
+      .mobileLink:hover {
+        opacity:0.5;
+      }
+      #menu {
+        padding: 0;
+        list-style-type: none;
+        display: block;
+      }
+      #mobileNav {
+        background-color: var(--woodBrown);
+        height: 65px;
+        position: fixed;
+        width: 100vw;
+        z-index: 999;
+      }
+      #menu li{
+          width: 100%;
+      }    
+      
+      #menuToggle {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25px;
+        left: 25px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      
+      #menuToggle input{
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1000;
+      }
+      
+      #menuToggle span{
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        z-index: 100;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+      }
+      
+      #span1{
+        transform-origin: 0% 0%;
+      }
+      
+      #span3{
+        transform-origin: 0% 100%;
+      }
+      
+      #menuToggle input:checked ~ #span1{
+        opacity: 1;
+        transform: rotate(45deg) translate( 0px, 0px);
+        background: #36383F;
+      }
+      #menuToggle input:checked ~ #span2{
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+      
+      #menuToggle input:checked ~ #span3{
+        transform: rotate(-45deg) translate(0, -1px);
+        background: #36383F;
+      }
+      
+      #menu{
+        position: absolute;
+        width: 60vw;
+        height: 100vh;
+        box-shadow: 0 0 10px #85888C;
+        margin: -50px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background-color: var(--pergamentWhite);
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      }
+      
+      #menu li{
+        padding: 10px 0;
+        transition-delay: 2s;
+      }      
+      #menuToggle input:checked ~ ul{
+        transform: none;
+      }
+      #mobileVolumeDiv{
+          position: fixed;
+          right: 25px;
+          top: 25px;
+          height: 21px;
+      }
+      #mobilenavVolBtn{
+        height: 100%;
+      }
+      #mobilenavMuteBtn{
+        height: 100%;
+        display: none;
+      }
+
+      /* Href Nav Anchors */
+      #diceRoller{
+        position: relative;
+    }
+        #diceRollerHrefAnchor{
+        position: absolute;
+        top: -100px;
+        }
+        #ttrpgHrefAnchor{
+        top: -140px;
+        }
+        #weltHrefAnchor{
+        top: -120px;
+        }
+        #downloadsHrefAnchor{
+            top: -100px;
+        }
+        
+    #atmosHrefAnchor{
+        position: absolute;
+        top: -100px;
+    }
+}
+@media (min-width: 48rem) { /* min 768px */
+
+}
+@media (min-width: 62rem) { /* min 992px */
+
+}
+@media (min-width: 75rem) { /* min 1200px */
+
+}
+
+/*
+#mobileNav{
+    background-color: #1E1E23;
+    height: var(--height-Navbar);
+}
+#menu a{
+    text-decoration: none;
+    color: #1E1E23;
+    opacity:1;
+    font-family: 'work sans', sans serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: 200ms;
+}
+#menu a:hover{
+    opacity:0.5;
+}
+#menu ul{
+    padding: 0;
+    list-style-type: none;
+}
+  
+  
+  
+  
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle input
+  {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu
+  {
+    position: absolute;
+    right: 0px;
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(150%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+  
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }*/

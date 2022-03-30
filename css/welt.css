@@ -1,0 +1,360 @@
+/* CSS File: Welt-Bereich */
+/* Welt Startseite */
+
+
+
+#welt {
+    padding-top: 50px;
+}
+
+
+.sectionStart{
+    height: calc(100vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
+    position: relative;
+}
+
+.magicAudio {
+    position: relative;
+    left: 15%;
+    top: 10px;
+}
+
+
+#animationsfilmWeltBox {
+    position: relative;
+    top: 600px;
+}
+
+
+
+@media only screen and (min-width: 720px) {
+    
+    #weltStart h1{
+        width: 35%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -5rem;
+        padding: 10px;
+        border: 5px solid #CC8F22;
+        background-color: var(--pergamentWhite);
+    
+    }
+
+}
+
+
+#weltAnimationsfilmTafel{
+    height: calc(175vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -770px;
+    /*z-index: -1;*/
+    padding-top: 80px;
+}
+
+
+#animationsfilmWelt {
+    position: absolute;
+    width: 58%;
+    left: 21%;
+    top: 290px;
+    border: solid rgb(82, 45, 4) 3px;
+    z-index: 20;
+}
+
+/* ******************* */
+.backgroundWood{
+    background-image: url("../assets/Background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: relative;
+}
+.threeHigh{
+    height: calc(300vh - var(--height-Navbar));
+}
+/* Welt Einstieg */
+#weltEinstieg{
+    height: calc(100vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.redFrame{
+    border: 5px solid #823E36;
+    width: 100%;
+    height: 100%;
+}
+.yellowFrame{
+    border: 5px solid #CC8F22;
+    background-color: var(--pergamentWhite);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+.h1Frame{
+    padding: 10px;
+    width: 24%;
+    height: 16%;
+}
+#abenteuerEinstieg{
+    width: 1000px;
+    height: 70vh;
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+}
+#firstRedBox{
+    margin-top: 100px;
+}
+.yellowBoxPara{
+    margin: 50px;
+}
+
+#weltEinstiegText {
+    margin-top: 5%;
+}
+
+
+/* BuchBox */
+#weltBook{
+    height: calc(100vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    top: 100vh;
+    transform: translateX(-50%);
+}
+/* Buchrahmen */
+#weltbookFrame{
+    width: 1200px;
+    height: calc(76vh - var(--height-Navbar) + 20px); /* gesamte Höhe Minus die Höhe der Navbar - Höhe Margin top and bottom */
+    border: 4px solid black;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #47271a;
+    position: relative;
+}
+/* Buch */
+#vl1{
+    border-left: 3px solid var(--woodBrown);
+    border-top: 3px solid var(--woodBrown);
+    border-bottom: 3px solid var(--woodBrown);
+    height: calc(80vh - 127px);
+    width: 580px;
+    margin-top: 20px;
+    position: absolute;
+    left: 20px;
+    background: linear-gradient(to left, #000000 0%, var(--pergamentWhite) 20%);
+}
+#vl2{
+    border-right: 3px solid var(--woodBrown);
+    border-top: 3px solid var(--woodBrown);
+    border-bottom: 3px solid var(--woodBrown);
+    height: calc(80vh - 127px);
+    width: 580px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    background: linear-gradient(to right, #000000 0%, var(--pergamentWhite) 20%);
+}
+.bookPathSvg{
+    position: absolute;
+    width: 1160px;
+    top: 21px;
+    left: 22px;
+}
+.bookPath{
+    stroke: var(--woodBrown);
+    stroke-width: 2; 
+    fill: #908673;
+}
+
+/* Linke Buchseite */
+.leftBookSide{
+    width: 574px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+.leftBookSide h2{
+    text-align: center;
+}
+.BookPoints p{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/* Rechte Buchseite */
+.rightBookSide{
+    width: 574px;
+    position: absolute;
+    left: 596px;
+    top: 80px;
+}
+#rightBookSideIconsBox{
+    height: 120px;
+    width: 400px;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#rightBookSideIconsBox img{
+    height: 100%;
+    margin-left: 10px;
+    position: absolute;
+}
+.iconsBoxIcons{
+    cursor: pointer;
+}
+.iconsBoxIcons:nth-child(1){
+    left: 0px;
+}
+.iconsBoxIcons:nth-child(2){
+    left: 25%;
+}
+.iconsBoxIcons:nth-child(3){
+    left: 50%;
+}
+.iconsBoxIcons:nth-child(4){
+    left: 75%;
+}
+#infoIcon{
+    height: 140px !important;
+    top: -15px;
+    left: -15px;
+}
+.rightSideBox{
+    display: none;
+    width: 400px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rightSideBox h2{
+    text-align: center;
+    width: 400px;
+}
+.rightSideBox p{
+    margin-top: 50px;
+    width: 400px;
+    text-align: justify;
+}
+.iconMarginMagie {
+    margin-top: 150px !important;
+}
+.rightSideBoxIcon{
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rightSideBox:nth-child(1){
+    display: block;
+}
+/* Welt Hoch Tief */
+#weltHochTief{
+    height: calc(130vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 62%;
+    top: 190vh;
+    transform: translateX(-50%);
+
+}
+#hoehenUndTiefen{
+    width: 65%;
+    height: 80%;
+    margin-left: 1%;
+}
+#weltHochTief #hoehenUndTiefen h2 {
+    color: black;
+}
+
+#weltHochTiefCrowBox{
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 33%;
+    height: 50%;
+}
+#weltHochTiefTextContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#weltHochTiefCrow{
+    position: absolute;
+    top: 65.5%;
+    right: 182%;
+    height: 22%;
+    z-index: 11;
+}
+
+#weltHochTiefText{
+    width: 45%;
+    height: 25%;
+    position: absolute;
+    top: 1%;
+    left: 8%;
+}
+
+#weltDownloadBtn{
+    position: absolute;
+    top: 85%;
+    right: 163%;
+    width: 72%;
+    height: 8%;
+
+	background-color:#CBBBA0;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Montserrat;
+    font-weight:700;
+	font-size:15px;
+	padding:10px 45px;
+    border-width:2px;
+    border-color:#CC8F22;
+
+    transition-duration:0.5s;
+}
+
+#weltDownloadBtn:hover {
+	background-color:#767088;
+    color: white;
+    border-color: #823E36;
+    border-width:2px;
+}
+
+
+/*Buch Typo*/
+
+#leftBookSide p {
+    color: rgb(0, 0, 0);
+    transition-duration: .5s;
+    }
+
+/*Hover Effekt*/
+#leftBookSide p:hover {
+    color: rgba(0, 0, 0, 0.527);
+    padding-left: 1rem;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 720px) {
+    
+    #weltMain {
+        margin-top: 250px;
+    }    
+
+}
+

@@ -1,0 +1,143 @@
+/* Main CSS File */
+
+:root {
+  --height-Navbar: 62px;
+
+  --woodBrown: #754D24;
+  --pergamentWhite: #CBBBA0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  margin-top: 112px;
+  overflow-x: hidden;
+}
+
+.hero {
+  /*
+  margin: 0;
+  padding: 0;
+  margin-top: 112px;
+  background-image: url("../assets/backgroundAnimated.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+
+  min-height: 100%;
+  position: relative;
+}  
+.hero::before{
+  background-image: url("../assets/backgroundAnimated.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -10;  
+}
+
+
+@font-face {
+  font-family: "BreathFire";
+  src: url("../assets/Fonts/Breathe_Fire_II.otf") format("opentype");
+}
+@font-face{
+  font-family: "PerpetuaTitlingMT";
+  src: url("../assets/Fonts/Perpetua_Titling_MT_Std.otf") format("opentype");
+}
+@font-face{
+  font-family: "Montserrat";
+  src: url("../assets/Fonts/Montserrat/Montserrat-Regular.otf") format("opentype");
+}
+h1 {
+  font-size: 5rem;
+  color: black;
+  text-align: center;
+  font-family: PerpetuaTitlingMT;
+  font-weight: 200;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: PerpetuaTitlingMT;
+  color: black;
+  font-weight: 100;
+}
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Montserrat;
+  color: white;
+  font-weight: 100;
+}
+p{
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: black;
+}
+
+.fontHover:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.03);
+}
+
+.fontHover:hover{
+  transition: 0.3s ease-in-out;
+  color: #9c150b !important;
+}
+
+.ravenHover:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.iconHover:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+  
+}
+
+
+.anchor{
+  position: absolute;
+  left: 0;
+  top:  calc((var(--height-Navbar) * -1) + 1px);
+}
+
+.posRelative{
+  position: relative;
+}
+#startFrameHrefAnchor{
+  position: absolute;
+  top: -112px;
+}
+#ttrpgHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#weltHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#karteHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#toolsHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#downloadsHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+
+.rahmenUebergang {
+  margin-bottom: -20%;
+}

@@ -1,0 +1,289 @@
+/* CSS File: TTRPG-Bereich */
+
+/* Erster Teil: Navigation */
+
+#ttrpg {
+    z-index: 1;
+}
+
+@media only screen and (min-width: 720px) {
+    #h1TTRPG {
+        padding: 10px;
+        border: 5px solid #CC8F22;
+        background-color: var(--pergamentWhite);
+        width: 400px;
+        height: 100px;
+    }
+}
+
+
+#mobileTTRPG{
+    display: none;
+}
+#ttrpgNav{
+    margin-top: 0px;   
+    position: relative; 
+    min-height: 650px;
+}
+#ttrpgNav > h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5rem;
+}
+#sprechblase{
+    height: 200px;
+    width: auto;
+    position: absolute;
+    left: 27%;
+    top: 150px;
+    background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+#sprechblase  p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 12px;
+    padding-top: 15px;
+    max-width: 45%;
+    position: relative;
+    right: .5%;
+    top: 15px;
+    opacity: 0;
+
+}
+#crowTTRPG{
+    height: 200px;
+    position: absolute;
+    right: 40%;
+    bottom: 215px;
+    z-index: 10;
+}
+#ttrpgNavbar{
+    position: absolute;
+    top: 410px;
+    width: 80%;
+    min-height: 120px;
+    margin-left: 10%;
+    background-image: url("../assets/ttrpg/Intro_TTRPG_NavBar.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;    
+}
+
+
+.questionBox{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-family: PerpetuaTitlingMT;
+    cursor: pointer;
+}
+.questionBox > p{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.questionBox:nth-child(1){
+    left: 0px;
+}
+.questionBox:nth-child(2){
+    left: 25%;
+}
+.questionBox:nth-child(3){
+    left: 50%;
+}
+.questionBox:nth-child(4){
+    left: 75%;
+}
+.navbarQuestionsImg{
+    height: 120%;
+    visibility: hidden;
+}
+
+/* Zweiter Teil */
+
+.ttrpgUnterseite p {
+    color: black;
+}
+
+.erklaertext {
+    padding: 2rem;
+}
+
+.ttrpgUnterseite{
+    height: calc(100vh - 67px);
+    max-width: 1400px;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+    position: relative;
+}
+.ttrpgUnterseite p{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+/* Zweiter Teil: Was ist ein TTRPG? */
+
+
+#videoFrame{
+    height: 60%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#ytVideoFrame{
+    padding: 20px;
+    border: solid black 5px;
+    background-color: grey;
+    height: 35%;
+    width: calc(35% * 1.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4%;
+}
+#wasIstYtVideo{
+    height: 100%;
+    width: 100%;    
+    border: solid black 3px;
+    background-color: black;
+}
+/* Zweiter Teil: Wie funktioniert ein TTRPG? */
+
+.rolleFunktionContainer {
+    position: absolute;
+    bottom: 5%;
+    left: 23%;
+    height: 50%;
+}
+
+.rolleFunktion {
+    height: 100%;
+}
+
+.rolleFunktionPicture {
+    height: 62%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 19%;
+    border: solid rgb(92, 60, 40) 2px;
+}
+
+/* Zweiter Teil: Was Brauche Ich */
+#wasBraucheIchH2.yellowFrame {
+    position: absolute;
+    left: 280px;
+    height: 50px;
+    width: 800px;
+    padding: 20px;
+}
+
+#questionsFrame{
+    height: 70%;
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: -6%;
+    background-image: url("../assets/ttrpg/Intro_TTRPG_2_Textbox_2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#questions p{
+    font-size: 1.3em;
+    color: black;
+    margin: 0;
+    margin-top: 8%;
+    cursor: pointer;
+}
+#questions{
+    padding-top: 10%;
+    margin: auto;
+    width: 60%;
+    
+}
+#rolleBraucheContainer{
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+    height: 70%;
+}
+
+#rolleBrauche{
+    height: 100%;
+}
+
+#sprechblaseHouse{
+    height: 30%;
+    width: auto;
+    position: absolute;
+    top: -23%;
+    left: 20%;
+    background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
+    background-repeat: no-repeat;
+}
+#sprechblaseHousePara{
+    font-size: 1.5em;
+    text-align: center;
+    width: 28%;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+#crowWasBraucheIch{
+    height: 80%;
+    position: absolute;
+    right: 35%;
+    top: 45%;
+}
+#rolleBrauchePicture{
+    height: 62%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 19%;
+    border: solid rgb(92, 60, 40) 2px;
+}
+/* Zweiter Teil: Welche Aufgaben hat der Spielmeister */
+
+/* Media Query */
+@media only screen and (min-width: 720px) {
+    
+    #ttrpgQ4 {
+        top: -6%;
+    }   
+
+    #contentDesktopTTRPG {
+        height: 1100px;
+    }
+
+    #wasIst {
+        height: 900px;
+        top: 50px;
+    }
+
+    #wieFunktioniert {
+        height: 900px;
+        top: 50px;
+    }
+
+    #welcheAufgabe {
+        height: 900px;
+        top: 50px;
+    }
+
+
+    
+
+}
+
+@media only screen and (max-width: 400px) {
+    #crowTTRPG {
+        display: none;
+    }
+}
